@@ -46,4 +46,6 @@
       owner: caddy
       group: caddy
       recurse: yes
-  notify: restart caddy
+
+- name: restart caddy
+  service: name=caddy state=restarted enabled=yes

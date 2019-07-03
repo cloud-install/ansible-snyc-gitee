@@ -18,12 +18,12 @@
 
 - name: Copy PHP Configuration 
   template: src=php.ini dest=/etc/
-  notify: restart php
 
 - name: Copy PHP-FPM Configuration 
   copy: src=www.conf dest=/etc/php-fpm.d/
-  notify: restart php
 
+- name: restart php
+  service: name=php-fpm state=restarted enabled=yes
 
 - name: PHP-FPM update fixed
   lineinfile: 

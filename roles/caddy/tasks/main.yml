@@ -16,7 +16,9 @@
 
 - name: Copy Caddy Configuration 
   copy: src=caddy.conf dest=/etc/caddy
-  notify: restart caddy
+
+- name: restart caddy
+  service: name=caddy state=restarted enabled=yes
 
 
 - block:

@@ -25,10 +25,6 @@
   register: mysql_version
   
 
-- name: Copy MySQL{{mysqlver}} Configuration
-  template: src=my.cnf.jinja2 dest=/etc/my.cnf
-  notify: restart MySQL
-
 - name: Start MySQL{{mysqlver}} Service
   service: name=mysqld state=started enabled=yes
   
