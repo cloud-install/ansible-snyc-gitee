@@ -2,14 +2,11 @@
 
 ## To do
 
-* 集群
+* phpmyadmin 适配 Caddy
 
 ## Logs
 
 ### Bug Fixes
 
-* 2020-02-10  
-
 ### Features
-
-* 2020-02-24  
+  
