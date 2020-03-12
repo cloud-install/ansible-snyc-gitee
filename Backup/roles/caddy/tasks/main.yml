@@ -14,16 +14,23 @@
       path: /data/cert
       state: directory
 
-- name: Create a Caddy Log symbolic link
-  file:
-    src: '{{item.src}}'
-    dest: '{{item.dest}}'
-    state: link
-  with_items:
-    - {src: /var/log/caddy,dest: /data/logs/caddy}  # Caddy 日志软连接
-
 - name: Copy Caddy Configuration 
   copy: src=caddy.conf dest=/etc/caddy
 
 - name: restart caddy
   service: name=caddy state=restarted enabled=yes
+
+
+- block:
+  - name: Install Certbot
+    yum:
+      name: [certbot,certbot-nginx]
+  rescue:
+   - name: fix error
+     pip:
+       name: [requests==2.6.0,urllib3]
+       extra_args: --upgrade --force-reinstall
+  always:
+    - name: Install Certbot
+      yum:
+        name: [certbot,certbot-nginx]
