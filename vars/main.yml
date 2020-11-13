@@ -1,6 +1,9 @@
 mysql_root_password: "123456"
 mysql_remote: True
 
+w9panel_webs: 'caddy'
+w9panel_set_infrastructure: LCMP
+
 docker_applications: 
   - phpmyadmin
 
