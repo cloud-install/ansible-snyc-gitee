@@ -10,8 +10,6 @@
 - src: http://github.com/websoft9dev/role_php
 
 - src: http://github.com/websoft9dev/role_init
-
-- src: http://github.com/websoft9dev/role_9panel
   
 - src: http://github.com/websoft9dev/role_docker
 
