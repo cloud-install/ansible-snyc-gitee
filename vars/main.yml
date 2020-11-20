@@ -10,7 +10,7 @@ w9panel_webs: caddy
 w9panel_set_apps: 
   - Example
 
-w9panel_set_infrastructure: lcmp
+w9panel_set_infrastructure: LCMP
 
 init_db: 
   mysql:
