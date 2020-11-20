@@ -9,7 +9,9 @@ caddy_vhost_mode: "www"
 w9panel_webs: caddy
 w9panel_set_apps: 
   - Example
- 
+
+w9panel_set_infrastructure: lcmp
+
 init_db: 
   mysql:
     user: root
