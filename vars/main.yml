@@ -14,7 +14,7 @@ w9panel_set_infrastructure: LCMP
 
 init_db: 
   mysql:
-    user: root
+    admin: root
     password: "123456"
 
 
