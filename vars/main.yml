@@ -4,9 +4,6 @@ mysql_remote: True
 docker_applications: 
   - phpmyadmin
   
-caddy_appname: "example"
-caddy_vhost_mode: "www"
-w9panel_webs: caddy
 w9panel_set_apps: 
   - Example
 
