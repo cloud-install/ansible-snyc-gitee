@@ -71,7 +71,7 @@
   roles:
     - {role: role_common, tags: "role_common"}
     - {role: role_cloud, tags: "role_cloud"}
-    - {role: role_nginx, tags: "role_nginx"}
+    - {role: role_caddy, tags: "role_caddy"}
     - {role: role_redis, tags: "role_redis"}
     - {role: role_mysql, tags: "role_mysql"}
     - {role: role_php, tags: "role_php"}
