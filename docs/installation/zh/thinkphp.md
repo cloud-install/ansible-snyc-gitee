@@ -1,14 +1,14 @@
 # ThinkPHP
 
-Websoft9提供的 **ThinkPHP 运行环境(LAMP)**，基于 [LAMP 环境镜像](https://support.websoft9.com/docs/lamp/zh)制作，节省你的安装部署时间。
+Websoft9提供的 **ThinkPHP 运行环境(LCMP)**，基于 [LCMP 环境镜像](https://support.websoft9.com/docs/lcmp/zh)制作，节省你的安装部署时间。
 
 ### ThinkPHP安装原理
 
 下面介绍ThinkPHP是如何基于LAMP安装的
 
-> 如果您使用 **ThinkPHP 运行环境(LAMP)**，只需了解原理即可，无需再次安装 ThinkPHP。
+> 如果您使用 **ThinkPHP 运行环境(LCMP)**，只需了解原理即可，无需再次安装 ThinkPHP。
 
-1. 服务器部署 [LAMP 镜像](https://support.websoft9.com/docs/lamp/zh)
+1. 服务器部署 [LCMP 镜像](https://support.websoft9.com/docs/lcmp/zh)
 2. 将 ThinkPHP 包下载后上传到服务器目录：*/data/wwwroot/thinkphp*
 3. WinSCP 连接服务器，编辑虚拟主机配置文件：*/etc/httpd/vhost/vhost.conf* 
 4. 将 DocumentRoot, Directory 路径指向：*thinkphp/public*

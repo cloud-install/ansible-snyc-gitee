@@ -1,6 +1,6 @@
 # Parameters
 
-The LAMP deployment package contains a sequence software (referred to as "components") required for LAMP to run. The important information such as the component name, installation directory path, configuration file path, port, version, etc. are listed below.
+The LCMP deployment package contains a sequence software (referred to as "components") required for LCMP to run. The important information such as the component name, installation directory path, configuration file path, port, version, etc. are listed below.
 
 ## Path
 
@@ -11,12 +11,12 @@ Example application directory: */data/wwwroot/www.example.com*
 
 > The URL: *http://Internet IP* will access the example application
 
-### Apache
+### Caddy
 
-Apache vhost configuration file: */etc/httpd/conf.d/vhost.conf*    
-Apache main configuration file: */etc/httpd/conf/httpd.conf*   
-Apache logs file: */var/log/httpd*  
-Apache module configuration file: */etc/httpd/conf.modules.d/00-base.conf*    
+Caddy vhost configuration file: */etc/httpd/conf.d/vhost.conf*    
+Caddy main configuration file: */etc/httpd/conf/httpd.conf*   
+Caddy logs file: */var/log/httpd*  
+Caddy module configuration file: */etc/httpd/conf.modules.d/00-base.conf*    
 
 **vhost.conf** includes one [VirtualHost](https://support.websoft9.com/docs/linux/webs-apache.html#vhost) configuration items whitch matched the **Example application**
 ```
@@ -76,8 +76,8 @@ These ports should be opened for this application:
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
 | MySQL | 3306 | Remote connect MySQL | Optional |
-| HTTP | 80 | HTTP requests for LAMP | Required |
-| HTTPS | 443 | HTTPS requests LAMP | Optional |
+| HTTP | 80 | HTTP requests for LCMP | Required |
+| HTTPS | 443 | HTTPS requests LCMP | Optional |
 
 ## Version
 
@@ -93,13 +93,13 @@ php -v
 # List Installed PHP Modules
 php -m
 
-# Apache version on Centos
+# Caddy version on Centos
 httpd -v
 
-# Apache version on Ubuntu
+# Caddy version on Ubuntu
 apache2 -v
 
-# List Installed Apache Modules
+# List Installed Caddy Modules
 apachectl -M
 
 # MySQL version

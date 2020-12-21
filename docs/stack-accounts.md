@@ -1,6 +1,6 @@
 # Username and Password
 
-These accounts are required for LAMP image installation and configuration
+These accounts are required for LCMP image installation and configuration
 
 ## MySQL
 

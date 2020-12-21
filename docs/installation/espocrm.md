@@ -1,6 +1,6 @@
 # EspoCRM
 
-This chapter is used for users who have subscribed **EspoCRM image** or **LAMP image**.
+This chapter is used for users who have subscribed **EspoCRM image** or **LCMP image**.
 
 EspoCRM([DEMO](https://demo.espocrm.com/)) is an Open Source CRM (Customer Relationship Management) software that allows you to see, enter and evaluate all your company relationships regardless of the type. People, companies or opportunities – all in an easy and intuitive interface.It’s a web application with a frontend designed as a single page application based on backbone.js and a REST API backend written in PHP.
 
@@ -12,18 +12,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## EspoCRM deployment
 
 **If you are using the Websoft9 EspoCRM Image, go to the [EspoCRM Installation Wizard](/espocrm.md#espocrm-installation-wizard) directly**
 
-If you are using LAMP, please deploy EspoCRM to your Server as follows:
+If you are using LCMP, please deploy EspoCRM to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`espocrm`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`espocrm`
 3. Go to EspoCRM official website to [download](https://espocrm.com/download/)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy EspoCRM to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy EspoCRM to your Server
 
 ---
 
@@ -35,7 +35,7 @@ If you are using LAMP, please deploy EspoCRM to your Server as follows:
 2. Agree license, go to next step
   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/espocrm/ep02.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql)) and set administrator account
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql)) and set administrator account
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/espocrm/ep03.png)
 
 4. Wait the installing  
@@ -101,6 +101,6 @@ EspoCRM directory: */data/wwwroot/espocrm*
 
 #### How to set HTTPS for EspoCRM?
 
-Refer to [HTTPS of LAMP](https://support.websoft9.com/docs/lamp/solution-https.html)
+Refer to [HTTPS of LCMP](https://support.websoft9.com/docs/lcmp/solution-https.html)
 
 #### How to set SMTP for EspoCRM?

@@ -1,6 +1,6 @@
 # Typo3
 
-本文档可供使用了 **Typo3 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 Typo3 参考。
+本文档可供使用了 **Typo3 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 Typo3 参考。
 
 [Typo3](https://typo3.org/) 是一个具有大型全球社区的开源企业内容管理系统，由TYPO3协会的大约900名成员支持,TYPO3被许多知名公司和组织使用。
 
@@ -9,18 +9,18 @@
 在开始 Typo3 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## Typo3 安装到服务器
 
 **如果你使用的是 *Typo3 镜像*，本节请忽略，直接阅读下一节 【Typo3 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 Typo3 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 Typo3 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 Typo3 系统增加一个数据库，假如名称为：`typo3`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 Typo3 系统增加一个数据库，假如名称为：`typo3`
 3. 到 Typo3 官方[下载源码](https://get.typo3.org/)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 Typo3 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 Typo3 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -34,7 +34,7 @@
 2. 系统进入环境检测步骤，通过后进入下一步
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/typo3/ty02.png)
 
-3. 填写您的数据库参数（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）
+3. 填写您的数据库参数（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/typo3/ty03.png)
 
 4. 选择一个数据库 或 新建一个

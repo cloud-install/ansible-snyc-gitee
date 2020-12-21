@@ -1,6 +1,6 @@
 # Drupal
 
-This chapter is used for users who have subscribed **Drupal image** or **LAMP image**.
+This chapter is used for users who have subscribed **Drupal image** or **LCMP image**.
 
 Drupal is content management software. It's used to make many of the websites and applications you use every day. Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.
 
@@ -10,18 +10,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## Drupal deployment
 
 **If you are using the Websoft9 Drupal Image, go to the [Drupal Installation Wizard](/drupal.md#drupal-installation-wizard) directly**
 
-If you are using LAMP, please deploy Drupal to your Server as follows:
+If you are using LCMP, please deploy Drupal to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`drupal`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`drupal`
 3. Go to Drupal official website to [download](https://www.drupal.org/download)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy Drupal to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy Drupal to your Server
 
 ---
 
@@ -34,7 +34,7 @@ If you are using LAMP, please deploy Drupal to your Server as follows:
 3. Select an installation profile 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/drupal/dp02.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/drupal/dp03.png)
 
 5. Wait for installing

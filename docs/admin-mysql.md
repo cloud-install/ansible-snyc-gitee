@@ -1,6 +1,6 @@
 # MySQL
 
-LAMP deployment package includes MySQL and Web-GUI tool phpMyAdmin for MySQL management, refer to these steps to use it:
+LCMP deployment package includes MySQL and Web-GUI tool phpMyAdmin for MySQL management, refer to these steps to use it:
 
 1. Using the Chrome or FireFox to visit URL *http://Internet IP/phpmyadmin*
   ![log in phpMyadmin](https://libs.websoft9.com/Websoft9/DocsPicture/en/mysql/mysql-login-websoft9.png)

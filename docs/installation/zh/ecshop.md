@@ -1,6 +1,6 @@
 # ECSHOP
 
-本文档可供使用了 **ECSHOP 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 ECSHOP 参考。
+本文档可供使用了 **ECSHOP 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 ECSHOP 参考。
 
 ECSHOP（ecshop.com）流行的中文开源商城软件之一。有完善的本地化生态体系，提供了大量仿制模板和功能插件，方便用户快速构建个性化B2C商城、微信商城、多级分销等场景，适合于零售、跨境、母婴、鞋服等网店商业。
 
@@ -9,18 +9,18 @@ ECSHOP（ecshop.com）流行的中文开源商城软件之一。有完善的本�
 在开始 ECSHOP 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## ECSHOP 安装到服务器
 
 **如果你使用的是 *ECSHOP 镜像*，本节请忽略，直接阅读下一节 【ECSHOP 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 ECSHOP 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 ECSHOP 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 ECSHOP 系统增加一个数据库，假如名称为：`ecshop`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 ECSHOP 系统增加一个数据库，假如名称为：`ecshop`
 3. 到 ECSHOP 官方[获取源码](https://www.shopex.cn/products/ecshop)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 ECSHOP 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 ECSHOP 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -28,7 +28,7 @@ ECSHOP（ecshop.com）流行的中文开源商城软件之一。有完善的本�
 
 1.  本地浏览器访问：*http://域名 或  http://公网IP 进入安装向导（首选域名访问方式安装）
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ecshop/ecshop-startinstall-websoft9.png)
-2.  完成许可协议、环境检测之后，进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)），并设置的管理员帐号密码，然后继续
+2.  完成许可协议、环境检测之后，进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)），并设置的管理员帐号密码，然后继续
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ecshop/ecshop-dbconf-websoft9.png)
 3.  系统安装成功，系统提示激活系统，可以选择注册云起（云起是ecshop的开发厂商）激活或跳过激活
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ecshop/ecshop-active-websoft9.png)

@@ -1,6 +1,6 @@
 # Troubleshooting
 
-If you're having trouble with running LAMP, here is a quick guide to solve most common problems.
+If you're having trouble with running LCMP, here is a quick guide to solve most common problems.
 
 > Most faults about the Instance is closely related to the Instance provider, Cloud Platform. Provided you're sure the fault is caused by Cloud Platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html).
 
@@ -43,6 +43,6 @@ If you have confidence in your own backup, you do not need the binlog function. 
 
 Please try another browser, such as chrome or firefox. If the phpMyAdmin can be opened normally before, and now appears to be incomplete or blank, it is recommended to clean up the browser cache, cookies and other information
 
-#### When restart Apache service, such error *No spaces...*
+#### When restart Caddy service, such error *No spaces...*
 
-Do not worry, the Apache service is running
+Do not worry, the Caddy service is running

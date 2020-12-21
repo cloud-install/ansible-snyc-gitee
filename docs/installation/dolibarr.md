@@ -1,6 +1,6 @@
 # Dolibarr
 
-This chapter is used for users who have subscribed **Dolibarr image** or **LAMP image**.
+This chapter is used for users who have subscribed **Dolibarr image** or **LCMP image**.
 
 Dolibarr([DEMO](https://dolibarr.com/demo/)) is a fork of SugarCRM Community Edition. Massively extended, Dolibarr delivers Workflow, Reporting, Portal, Quotes, Products, Invoices, Accounts, Contacts, Opportunities, Projects, Responsive mobile theme, Email marketing campaigns, Knowledge Base, Outlook and Thunderbird integration, Contracts, Leads, Activities and much more.
 
@@ -12,18 +12,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## Dolibarr deployment
 
 **If you are using the Websoft9 Dolibarr Image, go to the [Dolibarr Installation Wizard](/dolibarr.md#dolibarr-installation-wizard) directly**
 
-If you are using LAMP, please deploy Dolibarr to your Server as follows:
+If you are using LCMP, please deploy Dolibarr to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`dolibarr`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`dolibarr`
 3. Go to Dolibarr official website to [download](https://www.dolibarr.org/downloads)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy Dolibarr to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy Dolibarr to your Server
 
 ---
 
@@ -35,7 +35,7 @@ If you are using LAMP, please deploy Dolibarr to your Server as follows:
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/dolibarr/dolibarr-check-websoft9.png)
 
 2. Agree license and environment, go to next step
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/dolibarr/dolibarr-dbconf-websoft9.png)
 
 4. Check database connection
@@ -100,6 +100,6 @@ Dolibarr directory: */data/wwwroot/dolibarr*
 
 #### How to set HTTPS for Dolibarr?
 
-Refer to [HTTPS of LAMP](https://support.websoft9.com/docs/lamp/solution-https.html)
+Refer to [HTTPS of LCMP](https://support.websoft9.com/docs/lcmp/solution-https.html)
 
 #### How to set SMTP for Dolibarr?

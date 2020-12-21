@@ -1,6 +1,6 @@
 # Concrete5
 
-This chapter is used for users who have subscribed **Concrete5 image** or **LAMP image**.
+This chapter is used for users who have subscribed **Concrete5 image** or **LCMP image**.
 
 Concrete5 is a content management system written in the PHP programming language. Concrete5 began as Concrete CMS in 2003, and was the glue behind many web applications, websites, stores and forums between 2003 and 2008.
 
@@ -10,18 +10,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## Concrete5 deployment
 
 **If you are using the Websoft9 Concrete5 Image, go to the [Concrete5 Installation Wizard](/concrete5.md#concrete5-installation-wizard) directly**
 
-If you are using LAMP, please deploy Concrete5 to your Server as follows:
+If you are using LCMP, please deploy Concrete5 to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`concrete5`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`concrete5`
 3. Go to Concrete5 official website to [download](http://www.concrete5.org/download)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy Concrete5 to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy Concrete5 to your Server
 
 ---
 
@@ -33,7 +33,7 @@ If you are using LAMP, please deploy Concrete5 to your Server as follows:
 2. After selecting a language, environment detection, go to the administrator settings interface. Set up the administrator account first and keep it in mind 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/concrete5/concrete5-setadmin-websoft9.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/concrete5/concrete5-installconfigdb-websoft9.png)
 
 5. After the installation is successful, the system will display the installation success information, and then click "Edit your site" to enter the background

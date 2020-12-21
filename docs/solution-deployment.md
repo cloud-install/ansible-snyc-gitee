@@ -1,16 +1,16 @@
 # Deploy a PHP application
 
-To deploy PHP application on LAMP, you need to add **VirtualHost** for it
+To deploy PHP application on LCMP, you need to add **VirtualHost** for it
 
 Overall, just need two steps: 
 1. Upload source codes of applicaiton
-2. Add new VirtualHost in the file [Apache vhost configuration file](/stack-components.md#apache) 
+2. Add new VirtualHost in the file [Caddy vhost configuration file](/stack-components.md#apache) 
 
 > VirtualHost is vhost configuration segment. Each application must correspond to a unique VirtualHost in **vhost.conf**.
 
 ## Prepare
 
-To deploy PHP application on LAMP, you need to know the followings:
+To deploy PHP application on LCMP, you need to know the followings:
 
 *  **Vhost Configuration File**: */etc/httpd/vhost/vhost.conf* 
 *  **Tools**: Using WinSCP to mange files and run command
@@ -21,18 +21,18 @@ Once you have a overall, you can start you application deployment now
 
 ## Deploy fisrt application
 
-There is a example application in LAMP, we sugget you to **replace the example application** for deploy first application:
+There is a example application in LCMP, we sugget you to **replace the example application** for deploy first application:
 
 1. Use WinSCP to connect Cloud Server,
 2. Delete all files in the folder */data/wwwroot/www.example.com*, but don't delete *www.example.com*
 3. Upload your application's codes to the folder: */data/wwwroot/www.example.com* 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/winscp-uploadcodestoexample-websoft9.png)
 4. Modify the  `<VirtualHost *:80>...</VirtualHost>` segment ([refer to](/solution-deployment.md#virtualhost)) in the file *vhost.conf* if you want to bind domain or modify folder name
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lamp/lamp-editvhostconf-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lcmp/lcmp-editvhostconf-websoft9.png)
    ::: warning
    If you do not bind the domain and do not modify the directory name, skip steps 4 and 5.
    :::
-5. Save the file *vhost.conf* and then Restart Apache Service
+5. Save the file *vhost.conf* and then Restart Caddy Service
       ~~~
       systemctl restart httpd
       ~~~
@@ -43,11 +43,11 @@ There is a example application in LAMP, we sugget you to **replace the example a
 Start to deploy the second application, you should add new `<VirtualHost *:80>...</VirtualHost>` segment to the file *vhost.conf* 
 
 1. Connect Cloud Server, then create a new folder named "mysite2" to the directory */data/wwwroot*
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lamp/lamp-createmysite2-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lcmp/lcmp-createmysite2-websoft9.png)
 2. Upload your application's codes to the folder: */data/wwwroot/mysite2* 
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lamp/lamp-uploadcodes-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lcmp/lcmp-uploadcodes-websoft9.png)
 3. Edite the file *vhost.conf*
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lamp/lamp-editvhostconf-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/lcmp/lcmp-editvhostconf-websoft9.png)
 
     Have domain or no domain, Choose one of the options below:
 
@@ -85,7 +85,7 @@ Start to deploy the second application, you should add new `<VirtualHost *:80>..
 	  Require all granted
 	  </Directory>
       ```
-4. Save the file *vhost.conf* and then Restart Apache Service
+4. Save the file *vhost.conf* and then Restart Caddy Service
       ~~~
       systemctl restart httpd
       ~~~
@@ -96,7 +96,7 @@ Start to deploy the second application, you should add new `<VirtualHost *:80>..
 
 **Deploy more application** is the same with **Deploy second application**
 
-Finally, we know the new and summarize the steps of the LAMP deployment site: 
+Finally, we know the new and summarize the steps of the LCMP deployment site: 
 
 1. Upload the website code 
 2. Bind the domain name (not necessary) 
@@ -106,7 +106,7 @@ Finally, we know the new and summarize the steps of the LAMP deployment site:
 
 ## VirtualHost
 
-All items in the VirtualHost must be correct, any error may cause Apache can't start and applicaiton not accessible
+All items in the VirtualHost must be correct, any error may cause Caddy can't start and applicaiton not accessible
 
 |  VirtualHost Item  |  Use  |  Necessity |
 | --- | --- | --- |
@@ -126,7 +126,7 @@ Run the this comannd
 chown -R apache.apache /data/wwwroot
 ~~~
 
-#### I can't restart Apache service after modify the *vhost.conf*?
+#### I can't restart Caddy service after modify the *vhost.conf*?
 
 Check the application directory items in the segement of your *VirtualHost*
 

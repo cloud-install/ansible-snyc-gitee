@@ -1,12 +1,12 @@
 # 初始化安装
 
-在云服务器上部署 LAMP 预装包之后，请参考下面的步骤快速入门。
+在云服务器上部署 LCMP 预装包之后，请参考下面的步骤快速入门。
 
 ## 准备
 
 1. 在云控制台获取您的 **服务器公网IP地址** 
 2. 在云控制台安全组中，检查 **Inbound（入）规则** 下的 **TCP:80** 端口是否开启
-3. 若想用域名访问 LAMP，请先到 **域名控制台** 完成一个域名解析
+3. 若想用域名访问 LCMP，请先到 **域名控制台** 完成一个域名解析
 
 ## 测试可用性
 
@@ -17,13 +17,13 @@
 
 ## 登录数据库
 
-LAMP 预装包中内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登录MySQL](/zh/admin-mysql.md) 管理用户和数据库
+LCMP 预装包中内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登录MySQL](/zh/admin-mysql.md) 管理用户和数据库
 
 ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/9panel/9panel-mysql-websoft9.png)
 
 ## 安装网站
 
-LAMP 可以用来部署多个 PHP 网站，[马上开始吧](/zh/solution-deployment.md)
+LCMP 可以用来部署多个 PHP 网站，[马上开始吧](/zh/solution-deployment.md)
 
 ## 常见问题
 

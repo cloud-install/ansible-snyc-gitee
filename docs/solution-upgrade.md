@@ -6,7 +6,7 @@ You should know the differences between the terms **Update** and **Upgrade**([Ex
 - Operating system patching is **Update**, Ubuntu16.04 to Ubuntu18.04 is **Upgrade**
 - MySQL5.6.25 to MySQL5.6.30 is **Update**, MySQL5.6 to MySQL5.7 is **Upgrade**
 
-For LAMP maintenance, focus on the following two Update & Upgrade jobs
+For LCMP maintenance, focus on the following two Update & Upgrade jobs
 
 - Sytem update(Operating System and Running Environment) 
 - PHP Version Upgrade

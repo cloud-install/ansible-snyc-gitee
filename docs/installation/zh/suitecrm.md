@@ -1,6 +1,6 @@
 # SuiteCRM
 
-本文档可供使用了 **SuiteCRM 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 SuiteCRM 参考。
+本文档可供使用了 **SuiteCRM 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 SuiteCRM 参考。
 
 SuiteCRM是一个屡获殊荣的企业级的、强大的、可定制的，免费的CRM系统。包括市场、销售过程管理、协作管理、工作流、门户等功能模块。所有功能全部开源，完全具备商业CRM软件媲美的功能和架构。[官方演示](https://suitecrm.com/demo/)
 
@@ -11,18 +11,18 @@ SuiteCRM是一个屡获殊荣的企业级的、强大的、可定制的，免费
 在开始 SuiteCRM 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## SuiteCRM 安装到服务器
 
 **如果你使用的是 *SuiteCRM 镜像*，本节请忽略，直接阅读下一节 【SuiteCRM 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 SuiteCRM 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 SuiteCRM 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 SuiteCRM 系统增加一个数据库，假如名称为：`suitecrm`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 SuiteCRM 系统增加一个数据库，假如名称为：`suitecrm`
 3. 到 SuiteCRM 官方[下载源码](https://www.SuiteCRM.org/downloads)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 SuiteCRM 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 SuiteCRM 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -34,7 +34,7 @@ SuiteCRM是一个屡获殊荣的企业级的、强大的、可定制的，免费
 2. 环境检测会自动通过，选择Next进入下一步
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/suitecrm/suitecrm-check-websoft9.png)
 
-3. 系统进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）。然后设置管理员账号，牢记之，点击“安装”
+3. 系统进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）。然后设置管理员账号，牢记之，点击“安装”
 
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/suitecrm/suitecrm-dbconf-websoft9.png)
 4. 系统进入安装过程，耐心等待，安装成功后系统会进行提示

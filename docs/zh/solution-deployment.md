@@ -1,6 +1,6 @@
 # 安装网站
 
-在 LAMP 环境上安装一个网站，也就是我们常说的增加一个虚拟主机。
+在 LCMP 环境上安装一个网站，也就是我们常说的增加一个虚拟主机。
 
 宏观上看，只需两个步骤：**上传网站代码** + [**虚拟机主机配置文件**](/zh/stack-components.md#apache) **中增加 VirtualHost 配置段**
 
@@ -19,14 +19,14 @@
 
 ## 安装第一个网站
 
-下面通过**替换示例网站**（LAMP 默认存在一个示例网站）的方式来教你安装你的第一个网站：
+下面通过**替换示例网站**（LCMP 默认存在一个示例网站）的方式来教你安装你的第一个网站：
 
 1. 使用 WinSCP 连接服务器
 2. 删除示例网站 */data/wwwroot/www.example.com* 下的所有文件（保留目录）
 3. 将本地电脑上的网站源码上传到示例目录下
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/winscp/winscp-uploadcodestoexample-websoft9.png)
 4. 修改 *vhost.conf* 中已有 VirtualHost 配置段（[修改参考](/zh/solution-deployment.md#virtualhost)），实现绑定域名、修改网站目录名称等操作。
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-editvhostconf-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-editvhostconf-websoft9.png)
    ::: warning
    如果不绑定域名、不修改网站目录名称，请跳过步骤4和5
    :::
@@ -42,11 +42,11 @@
 从安装第二个网站开始，需要在*vhost.conf* 中增加对应的虚拟主机配置段，具体如下
 
 1. 使用 WinSCP 连接服务器，在 /data/wwwroot 下新建一个网站目录，假设命令为“mysite2”
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-createmysite2-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-createmysite2-websoft9.png)
 2. 将本地网站源文件上传到：*/data/wwwroot/mysite2* 
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-uploadcodes-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-uploadcodes-websoft9.png)
 3. 编辑 vhost.conf 文件
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-editvhostconf-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-editvhostconf-websoft9.png)
 
     根据是否通过域名访问，选择下面操作之一：
 
@@ -94,7 +94,7 @@
 
 安装第n个网站与安装第二个网站的操作步骤一模一样
 
-最后我们温故而知新，总结 LAMP 安装网站步骤： 
+最后我们温故而知新，总结 LCMP 安装网站步骤： 
 
 1. 上传网站代码
 2. 绑定域名（非必要）
@@ -124,13 +124,13 @@ VirtualHost 改动务必准确无误，任何错误的修改都会导致服务�
 chown -R apache.apache /data/wwwroot
 ~~~
 
-#### 修改 vhost.conf 文件之后，Apache 服务无法启动？
+#### 修改 vhost.conf 文件之后，Caddy 服务无法启动？
 
 一般是 VirtualHost 中虚拟主机的目录位置不正确导致
 
 #### 新增网站不可访问，且导致其他网站都不可访问？
 
-一般是 VirtualHost 中虚拟主机的目录位置不正确导致 Apache 无法启动
+一般是 VirtualHost 中虚拟主机的目录位置不正确导致 Caddy 无法启动
 
 #### 打开新增的网站，显示404错误？
 

@@ -17,15 +17,15 @@
    DocumentRoot "/data/wwwroot/mysite2"
    ...
    ```
-3. 保存配置文件，重启 [Apache 服务](/zh/admin-services.md#apache)
+3. 保存配置文件，重启 [Caddy 服务](/zh/admin-services.md#apache)
 
 
-## 使用 Apache 伪静态
+## 使用 Caddy 伪静态
 
-使用 Apache 伪静态有三个步骤：
+使用 Caddy 伪静态有三个步骤：
 
-1.  打开 [Apache模块配置文件](/zh/stack-components.md#apache)，检查 Rewrite 模块是否启用（LAMP 环境默认已经开启 Rewirte）
-2.  保证 [Apache 虚拟主机配置文件](/zh/stack-components.md#apache)中 VirtualHost 配置段中增加 AllowOverride All
+1.  打开 [Apache模块配置文件](/zh/stack-components.md#apache)，检查 Rewrite 模块是否启用（LCMP 环境默认已经开启 Rewirte）
+2.  保证 [Caddy 虚拟主机配置文件](/zh/stack-components.md#apache)中 VirtualHost 配置段中增加 AllowOverride All
 3.  给需要使用伪静态的网站的根目录中增加.htaccess文件，并在其中配置伪静态规则
 
 
@@ -39,7 +39,7 @@
    ```
    httpd -V
    AH00558: httpd: Could not reliably determine the server's fully qualified domain name
-   Server version: Apache/2.4.6 (CentOS)
+   Server version: Caddy/2.4.6 (CentOS)
    Server built:   Aug  8 2019 11:41:18
    Server's Module Magic Number: 20120211:24
    Server loaded:  APR 1.4.8, APR-UTIL 1.5.2
@@ -84,7 +84,7 @@ max_execution_time = 90
 # Memory Limit
 memory_limit – Minimum: 256M
 ```
-2. 保存并重启 [Apache 服务](/zh/admin-services.md#apache)
+2. 保存并重启 [Caddy 服务](/zh/admin-services.md#apache)
 
 ## PHP版本变更
 

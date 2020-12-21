@@ -1,12 +1,12 @@
 # Initial Installation
 
-If you have completed the LAMP deployment on Cloud Platform, the following steps is for you to start use it quikly
+If you have completed the LCMP deployment on Cloud Platform, the following steps is for you to start use it quikly
 
 ## Preparation
 
 1. Get the **Internet IP** on your Cloud Platform
 2. Check you **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the TCP:80 is allowed
-3. Make a domain resolution on your DNS Console if you want to use domain for LAMP
+3. Make a domain resolution on your DNS Console if you want to use domain for LCMP
 
 ## Usability test
 
@@ -16,17 +16,17 @@ If you have completed the LAMP deployment on Cloud Platform, the following steps
 2. You can get the basics of image, manage the database, access docs, and helpdesk from 9Panel
 ## Log in Database
 
-LAMP includes MySQL and Web-GUI tool `phpMyAdmin`, [Log in MySQL](/zh/admin-mysql.md) to manage your database now
+LCMP includes MySQL and Web-GUI tool `phpMyAdmin`, [Log in MySQL](/zh/admin-mysql.md) to manage your database now
 
 ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/en/9panel/9panel-mysql-websoft9.png)
 
 ## Application Installation
 
-You can install multiple applications on LAMP, refer to [Applications Deployment](/solution-deployment.md)
+You can install multiple applications on LCMP, refer to [Applications Deployment](/solution-deployment.md)
 
 ## Q&A
 
-#### I can't visit the start page of LAMP?
+#### I can't visit the start page of LCMP?
 
 Your TCP:80 of Security Group Rules is not allowed so there no response from Chrome or Firefox
 

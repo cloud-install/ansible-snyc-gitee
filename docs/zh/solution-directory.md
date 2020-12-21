@@ -15,9 +15,9 @@
 
 1. 使用 WinSCP 连接服务器
 2. 将 ***mysite1*** 文件夹整体拷贝到目标位置 */data2/wwwroot*
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-copysite1todata2-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-copysite1todata2-websoft9.png)
 3. 修改vhost.conf 中 mysite1 这个网站对应的 VirtualHost 配置段 DocumentRoot, Directory 项的值
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lamp/lamp-modifyvhostdata2-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/lcmp/lcmp-modifyvhostdata2-websoft9.png)
 
    原地址：/data/wwwroot/mysite1  
    目标地址：/data2/wwwroot/mysite1
@@ -44,7 +44,7 @@
 3. 连接服务器，将数据盘分区格式化
 4. 在云服务器根目录下创建一个临时目录 temp 
 5. 将数据盘挂载（mount）到:*/temp* 目录
-4. 停止云服务器上的 Apache 和 MySQL 服务
+4. 停止云服务器上的 Caddy 和 MySQL 服务
     ~~~
     sudo systemctl stop httpd mysqld
     ~~~
@@ -53,7 +53,7 @@
     > 数据较大的话，拷贝可能会失败，此步骤具体问题需具体对待
 6. 等待数据转移完成
 7. 连接服务器，将数据盘再次挂载（mount）到:*/data* 目录 
-8. 运行以下命令重新启动 Apache 和 MySQL:
+8. 运行以下命令重新启动 Caddy 和 MySQL:
    ```
    sudo systemctl start httpd mysqld
    ``` 
@@ -66,11 +66,11 @@
 
 网站从一台服务器（原服务器）迁移到另外一台服务器（目的服务器）是一个系统工程，基本步骤如下：
 
-1. 通过云控制台，在目的服务器上[部署](/zh/stack-deployment.md)参数一致的 LAMP 镜像。
+1. 通过云控制台，在目的服务器上[部署](/zh/stack-deployment.md)参数一致的 LCMP 镜像。
 2. 通过 WinSCP 将原服务器上的网站源文件**下载**到本地电脑，然后再**上传**到目的服务器。
 3. 通过 phpMyAdmin **导出**原服务器上的数据库，然后在目的服务器上**导入**数据库。
 4. 把原服务器上的 vhost.conf 配置文件内容，完整拷贝到目的服务器的 vhost.conf 中，保存之。
-5. 重启 Apache 服务。
+5. 重启 Caddy 服务。
 5. 解析域名到目的服务器，等待域名解析生效。
 5. 通过域名访问网站，测试可用性。
 6. 正式发布。

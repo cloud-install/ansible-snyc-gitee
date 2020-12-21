@@ -2,7 +2,7 @@
 
 # MantisBT
 
-本文档可供使用了 **MantisBT 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 MantisBT 参考。
+本文档可供使用了 **MantisBT 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 MantisBT 参考。
 
 [MantisBT](https://mantisbt.org) 是一个基于PHP技术的轻量级的开源问题（缺陷）跟踪系统，具有项目管理及问题跟踪功能，实现了简单性和功能性之间的微妙平衡，简单易用，易安装，适团队协作使用。
 
@@ -13,25 +13,25 @@
 在开始 MantisBT 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## MantisBT 安装到服务器
 
 **如果你使用的是 *MantisBT 镜像*，本节请忽略，直接阅读下一节 【MantisBT 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 MantisBT 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 MantisBT 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 MantisBT 系统增加一个数据库，假如名称为：`MantisBT`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 MantisBT 系统增加一个数据库，假如名称为：`MantisBT`
 3. 到 MantisBT 官方[下载源码](https://www.vtiger.com/open-source-crm)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 MantisBT 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 MantisBT 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
 ## MantisBT 初始化安装向导
 
 1. 本地浏览器访问：*http://域名* 或 *http://公网IP* 进入安装向导（首选域名访问方式）
-2. 系统自动完成许可协议、环境检测之后，进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）。填写数据库信息后，点击“Install/Upgrade Database”，开始安装
+2. 系统自动完成许可协议、环境检测之后，进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）。填写数据库信息后，点击“Install/Upgrade Database”，开始安装
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/mantisbt/mantisbt-install001-websoft9.png)
 3.  系统安装成功，系统提示，点击“Continue”进入下一步
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/mantisbt/mantisbt-install002-websoft.png)

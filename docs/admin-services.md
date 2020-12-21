@@ -1,8 +1,8 @@
 # Start or Stop the Services
 
-These commands you must know when you using the LAMP of Websoft9
+These commands you must know when you using the LCMP of Websoft9
 
-### Apache
+### Caddy
 
 ```shell
 #For Centos&Redhat

@@ -1,6 +1,6 @@
 # SuiteCRM
 
-This chapter is used for users who have subscribed **SuiteCRM image** or **LAMP image**.
+This chapter is used for users who have subscribed **SuiteCRM image** or **LCMP image**.
 
 SuiteCRM([DEMO](https://suitecrm.com/demo/)) is a fork of SugarCRM Community Edition. Massively extended, SuiteCRM delivers Workflow, Reporting, Portal, Quotes, Products, Invoices, Accounts, Contacts, Opportunities, Projects, Responsive mobile theme, Email marketing campaigns, Knowledge Base, Outlook and Thunderbird integration, Contracts, Leads, Activities and much more.
 
@@ -12,18 +12,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## SuiteCRM deployment
 
 **If you are using the Websoft9 SuiteCRM Image, go to the [SuiteCRM Installation Wizard](/suitecrm.md#suitecrm-installation-wizard) directly**
 
-If you are using LAMP, please deploy SuiteCRM to your Server as follows:
+If you are using LCMP, please deploy SuiteCRM to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`suitecrm`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`suitecrm`
 3. Go to SuiteCRM official website to [download](https://suitecrm.com/download/)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy SuiteCRM to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy SuiteCRM to your Server
 
 ---
 
@@ -37,7 +37,7 @@ If you are using LAMP, please deploy SuiteCRM to your Server as follows:
 3. Environment check
   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/suitecrm/suitecrm-check-websoft9.png)
 
-4. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql)) and set administrator account
+4. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql)) and set administrator account
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/suitecrm/suitecrm-installdb-websoft9.png)
 
    > Email is your system ID, not collected by anyone because it stored in your Cloud Server
@@ -135,7 +135,7 @@ Database connection configuration is this `config.php` file:
 
 #### How to set HTTPS for SuitCRM?
 
-Refer to [HTTPS of LAMP](https://support.websoft9.com/docs/lamp/solution-https.html)
+Refer to [HTTPS of LCMP](https://support.websoft9.com/docs/lcmp/solution-https.html)
 
 #### How to set SMTP for SuiteCRM?
 

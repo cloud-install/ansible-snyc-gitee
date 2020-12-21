@@ -1,10 +1,10 @@
 # SMTP
 
-Sending mail is a common feature for LAMP. After a large number of user practice feedback, only one way is recommended, that is, using the **third-party STMP service** to send the email.
+Sending mail is a common feature for LCMP. After a large number of user practice feedback, only one way is recommended, that is, using the **third-party STMP service** to send the email.
 
 > Do not try to install **Sendmail** or other Mail server software on your Cloud Server for sending mail, because it is very difficulty in maintenance.
 
-SMTP setting is related to your application, follow is the example using **SendGrid's SMTP Service** to configure sending mail for LAMP:
+SMTP setting is related to your application, follow is the example using **SendGrid's SMTP Service** to configure sending mail for LCMP:
 
 1. Log in SendGrid console, prepare your SMTP settings like the follow sample
    ```

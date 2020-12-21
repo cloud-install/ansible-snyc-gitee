@@ -1,6 +1,6 @@
 # Ranzhi（然之）
 
-本文档可供使用了 **Ranzhi 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 Ranzhi 参考。
+本文档可供使用了 **Ranzhi 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 Ranzhi 参考。
 
 Ranzhi 一款开源的OA&CRM系统，完全免费。采用PHP+MySql开发。由客户管理、订单管理、报销、审批、应收应付、财务记账和团队分享等功能组成，是一款非常合适中小企业的内部一体化管理软件。桌面式操作体验，优雅流畅、快捷方便。[官方演示](http://demo.ranzhi.org/)
 
@@ -9,18 +9,18 @@ Ranzhi 一款开源的OA&CRM系统，完全免费。采用PHP+MySql开发。由�
 在开始 Ranzhi 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## Ranzhi 安装到服务器
 
 **如果你使用的是 *Ranzhi 镜像*，本节请忽略，直接阅读下一节 【Ranzhi 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 Ranzhi 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 Ranzhi 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 Ranzhi 系统增加一个数据库，假如名称为：`ranzhi`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 Ranzhi 系统增加一个数据库，假如名称为：`ranzhi`
 3. 到 Ranzhi 官方[下载源码](https://www.ranzhi.org/download.html)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 Ranzhi 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 Ranzhi 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -32,7 +32,7 @@ Ranzhi 一款开源的OA&CRM系统，完全免费。采用PHP+MySql开发。由�
 2. 系统检查，通过后进入下一步
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ranzhi/ranzhi-install002-websoft9.gif)
 
-3.  进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）
+3.  进入配置数据库界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）
     ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ranzhi/ranzhi-install003-websoft9.gif)
 
 4.  继续下一步，直至进入管理员账号设置界面，请设置好并牢记之，然后进入下一步

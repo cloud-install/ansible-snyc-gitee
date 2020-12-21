@@ -1,6 +1,6 @@
 # Dolibarr
 
-本文档可供使用了 **Dolibarr 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 Dolibarr 参考。
+本文档可供使用了 **Dolibarr 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 Dolibarr 参考。
 
 Dolibarr是一个知名的开源ERP/CRM系统，功能包括：产品与服务目录、库存管理、银行账户管理、客户名录、订单管理、商业建议书、合同管理、发票管理、发票与支付管理、制造费用单、运输等，即插即用。[官方演示](https://demo.dolibarr.org/public/demo/)
 
@@ -9,18 +9,18 @@ Dolibarr是一个知名的开源ERP/CRM系统，功能包括：产品与服务�
 在开始 Dolibarr 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## Dolibarr 安装到服务器
 
 **如果你使用的是 *Dolibarr 镜像*，本节请忽略，直接阅读下一节 【Dolibarr 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 Dolibarr 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 Dolibarr 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 Dolibarr 系统增加一个数据库，假如名称为：`dolibarr`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 Dolibarr 系统增加一个数据库，假如名称为：`dolibarr`
 3. 到 Dolibarr 官方[下载源码](https://www.dolibarr.org/downloads)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 Dolibarr 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 Dolibarr 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -30,7 +30,7 @@ Dolibarr是一个知名的开源ERP/CRM系统，功能包括：产品与服务�
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/dolibarr/dolibarr-check-websoft9.png)
 
 2. 完成通过许可协议、安装进入环境检测步骤，点击“Start”
-3. 安装进入数据库配置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)），然后点击”Next Step”
+3. 安装进入数据库配置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)），然后点击”Next Step”
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/dolibarr/dolibarr-dbconf-websoft9.png)
 
 4. 安装开始验证数据库可用性和安装过程，持续点击“Next Step”

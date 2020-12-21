@@ -1,6 +1,6 @@
 # Pydio
 
-本文档可供使用了 **Pydio 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 Pydio 参考。
+本文档可供使用了 **Pydio 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 Pydio 参考。
 
 Pydio（pydio.com）是一个功能强大在线文件管理系统（ECM），采用PHP+MySQL开发，用于构建自托管的企业网盘和云存储系统，支持多用户的文档协作、分享、设备同步。功能全面，包括：文档管理、用户管理、权限管理，甚至还有能够恢复删除的文件等功能，开源版支持的设备APP非常全面，包括：IOS、Android、Windows、OSX、Linux五个客户端同步APP。
 
@@ -36,18 +36,18 @@ Pydio官网提供了演示环境，您可以直接访问演示地址体验
 在开始 Pydio 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## Pydio 安装到服务器
 
 **如果你使用的是 *Pydio 镜像*，本节请忽略，直接阅读下一节 【Pydio 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 Pydio 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 Pydio 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 Pydio 系统增加一个数据库，假如名称为：`pydio`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 Pydio 系统增加一个数据库，假如名称为：`pydio`
 3. 到 Pydio 官方[下载源码](https://pydio.com/en/download)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 Pydio 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 Pydio 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -58,7 +58,7 @@ Pydio官网提供了演示环境，您可以直接访问演示地址体验
      ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/pydio/pydio-install001-websoft9.png)
 3. 设置管理员账号，进入下一步
      ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/pydio/pydio-install002-websoft9.png)
-4. 选择Mysql数据库，填写数据库信息（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)），点击“test db connection”进入下一步
+4. 选择Mysql数据库，填写数据库信息（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)），点击“test db connection”进入下一步
      ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/pydio/pydio-install003-websoft9.png)
 5. 进入高级设置，设置默认语言为“简体中文”，点击“Install Pydio”，开始安装
      ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/pydio/pydio-install004-websoft9.png)

@@ -1,6 +1,6 @@
 # ZurmoCRM
 
-本文档可供使用了 **ZurmoCRM 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上部署 ZurmoCRM 参考。
+本文档可供使用了 **ZurmoCRM 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上部署 ZurmoCRM 参考。
 
 [Zurmo](https://zurmo.org)是一个开源的客户关系管理系统(CRM)，使用Yii框架、RedBeanPHP和Jquery实现，界面非常美观，用户体验很好。功能包括：客户、支持、联系人、邮件跟踪、销售机会、产品、报价等。[官方演示](http://demo.zurmo.com/)
 
@@ -9,18 +9,18 @@
 在开始 ZurmoCRM 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## ZurmoCRM 安装到服务器
 
 **如果你使用的是 *ZurmoCRM 镜像*，本节请忽略，直接阅读下一节 【ZurmoCRM 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 ZurmoCRM 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 ZurmoCRM 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 ZurmoCRM 系统增加一个数据库，假如名称为：`zurmo`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 ZurmoCRM 系统增加一个数据库，假如名称为：`zurmo`
 3. 到 ZurmoCRM 官方[下载源码](https://zurmo.org/download)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 ZurmoCRM 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 ZurmoCRM 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -28,7 +28,7 @@
 
 1. 本地浏览器访问：*http://域名* 或 *http://公网IP* 进入安装向导（首选域名访问方式）
 
-3. 安装进入数据库配置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)），然后点击【Install】  
+3. 安装进入数据库配置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)），然后点击【Install】  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/zurmo/zurmo-intall001-websoft9.png)
 
 2. 参考无误，系统进入安装界面  

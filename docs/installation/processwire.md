@@ -1,6 +1,6 @@
 # ProcessWire
 
-This chapter is used for users who have subscribed **ProcessWire image** or **LAMP image**.
+This chapter is used for users who have subscribed **ProcessWire image** or **LCMP image**.
 
 ProcessWire is an open source content management system (CMS) and web application framework aimed at the needs of designers, developers and their clients. ProcessWire gives you more control over your fields, templates and markup than other platforms, and provides a powerful template system that works the way you do. Not to mention, ProcessWire’s API makes working with your content easy and enjoyable. Managing and developing a site in ProcessWire is shockingly simple compared to what you may be used to.
 
@@ -10,18 +10,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## ProcessWire deployment
 
 **If you are using the Websoft9 ProcessWire Image, go to the [ProcessWire Installation Wizard](/processwire.md#processwire-installation-wizard) directly**
 
-If you are using LAMP, please deploy ProcessWire to your Server as follows:
+If you are using LCMP, please deploy ProcessWire to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`processwire`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`processwire`
 3. Go to ProcessWire official website to [download](https://processwire.com/download/)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy ProcessWire to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy ProcessWire to your Server
 
 ---
 
@@ -32,7 +32,7 @@ If you are using LAMP, please deploy ProcessWire to your Server as follows:
 2. Click the “Get Started” and complete the Compatibility Check
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/processwire/processwire-installpage-websoft9.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/processwire/processwire-installdb-websoft9.png)
 
 4. Fill in the administrator account information section

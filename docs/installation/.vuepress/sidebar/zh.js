@@ -4,8 +4,8 @@ module.exports = [
     collapsable: false,
     children: [
       '/zh/',
-      ['https://support.websoft9.com/docs/lamp/zh/stack-components.html','环境参数'],
-      ['https://support.websoft9.com/docs/lamp/zh/stack-accounts.html','账号密码'],
+      ['https://support.websoft9.com/docs/lcmp/zh/stack-components.html','环境参数'],
+      ['https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html','账号密码'],
       ['https://support.websoft9.com/docs/faq/zh/tech-instance.html','云服务器'],
     ]
   },

@@ -4,30 +4,30 @@ Each of the following solutions has been proven to be effective and we hope to b
 
 ## Domain binding
 
-The precondition for binding a domain is that LAMP can accessed by domain name.
+The precondition for binding a domain is that LCMP can accessed by domain name.
 
 Nonetheless, from the perspective of server security and subsequent maintenance considerations, the **Domain Binding** step cannot be omitted.
 
-LAMP domain name binding steps:
+LCMP domain name binding steps:
 
 1. Connect your Cloud Server
-2. Modify [Apache vhost configuration file](/stack-components.md#apache), change the **ServerName**'s value to your domain name
+2. Modify [Caddy vhost configuration file](/stack-components.md#apache), change the **ServerName**'s value to your domain name
    ```text
    <VirtualHost *:80>
    ServerName www.mydomain.com # modify it to your domain name
    DocumentRoot "/data/wwwroot/mysite2"
    ...
    ```
-3. Save it and restart [Apache Service](/admin-services.md#apache)
+3. Save it and restart [Caddy Service](/admin-services.md#apache)
 
 
 ## Use Rewrite
 
 Three steps to use rewrite for your application:
 
-1. Check the [Apache vhost configuration file](/stack-components.md#apache) to make sure that the Rewrite Module is enabled
-   > Rewrite was enabled by default on LAMP
-2. Add the *AllowOverride All* to your VirtualHost in the file of [Apache vhost configuration file](/stack-components.md#apache)
+1. Check the [Caddy vhost configuration file](/stack-components.md#apache) to make sure that the Rewrite Module is enabled
+   > Rewrite was enabled by default on LCMP
+2. Add the *AllowOverride All* to your VirtualHost in the file of [Caddy vhost configuration file](/stack-components.md#apache)
 3. Add the **rewrite rules** in the root directory of your application
 
 ## Rest MySQL *root* password
@@ -54,7 +54,7 @@ max_execution_time = 90
 # Memory Limit
 memory_limit – Minimum: 256M
 ```
-2. Save it and restart [Apache Service](/admin-services.md#apache)
+2. Save it and restart [Caddy Service](/admin-services.md#apache)
 
 ## PHP Version Upgrade
 

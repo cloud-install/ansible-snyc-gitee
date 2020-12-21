@@ -2,7 +2,7 @@ module.exports = {
 
 //针对不同项目，需要修改的参数有：base,title,description,repo以及nav,sidebar 文件夹下的导航js文件
 
-base: '/docs/lamp/installation/',
+base: '/docs/lcmp/installation/',
 dest: 'html/installation',
 
 head: [
@@ -14,7 +14,7 @@ locales: {
     '/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
       title: 'PHP Apps Installations',
-      description: 'You can get the Installation of opensource applications & CMS based on LAMP from this documentation powered by Websoft9.'
+      description: 'You can get the Installation of opensource applications & CMS based on LCMP from this documentation powered by Websoft9.'
     },
     '/zh/': {
       lang: 'zh-CN',
@@ -32,7 +32,7 @@ themeConfig: {
   sidebar: 'auto', // 默认值：false
 
   //Github 
-  repo: 'Websoft9/ansible-lamp',
+  repo: 'Websoft9/ansible-lcmp',
   editLinks: true,
   docsDir: 'docs/installation',
   docsBranch: 'main',

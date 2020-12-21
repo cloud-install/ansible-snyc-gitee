@@ -1,6 +1,6 @@
 # VtigerCRM
 
-This chapter is used for users who have subscribed **VtigerCRM image** or **LAMP image**.
+This chapter is used for users who have subscribed **VtigerCRM image** or **LCMP image**.
 
 VtigerCRM is an opensource CRM system that helps you create and automate a better customer journey.Vtiger CRM enables sales, support, and marketing teams to organize and collaborate to measurably improve customer experiences and business outcomes. Vtiger CRM also includes email, inventory, project management, and other tools, providing a complete the business management suite.
 
@@ -10,18 +10,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## VtigerCRM deployment
 
 **If you are using the Websoft9 VtigerCRM Image, go to the [VtigerCRM Installation Wizard](/dolibarr.md#dolibarr-installation-wizard) directly**
 
-If you are using LAMP, please deploy VtigerCRM to your Server as follows:
+If you are using LCMP, please deploy VtigerCRM to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`dolibarr`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`dolibarr`
 3. Go to VtigerCRM official website to [download](https://www.vtiger.com/open-source-crm/)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy VtigerCRM to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy VtigerCRM to your Server
 
 ---
 
@@ -34,7 +34,7 @@ If you are using LAMP, please deploy VtigerCRM to your Server as follows:
 2. Environment check, go to next step
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/vtigercrm/vtigercrm-install002-websoft9.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/vtigercrm/vtigercrm-install003-websoft9.png)
 
 4. Check the database connection, go to next step
@@ -76,6 +76,6 @@ VtigerCRM directory: */data/wwwroot/vtigercmm*
 
 #### How to set HTTPS for VtigerCRM?
 
-Refer to [HTTPS of LAMP](https://support.websoft9.com/docs/lamp/solution-https.html)
+Refer to [HTTPS of LCMP](https://support.websoft9.com/docs/lcmp/solution-https.html)
 
 #### How to set SMTP for VtigerCRM?

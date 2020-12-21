@@ -1,6 +1,6 @@
 # EspoCRM
 
-本文档可供使用了 **EspoCRM 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 EspoCRM 参考。
+本文档可供使用了 **EspoCRM 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 EspoCRM 参考。
 
 [EspoCRM](https://espocrm.com)是一个开源免费的轻量级CRM系统，采用响应式设计，界面非常美观大方，能够自动适应PC、平板和手机访问。功能非常全面，包括销售自动化、市场、销售过程、文档、产品、合同、知识库和工作流等功能。采用PHP+MySQL开发，支持字段和表单布局客制化。[官方演示](http://www.espocrm.com/demo/)
 
@@ -11,18 +11,18 @@
 在开始 EspoCRM 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## EspoCRM 安装到服务器
 
 **如果你使用的是 *EspoCRM 镜像*，本节请忽略，直接阅读下一节 【EspoCRM 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 EspoCRM 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 EspoCRM 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 EspoCRM 系统增加一个数据库，假如名称为：`espocrm`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 EspoCRM 系统增加一个数据库，假如名称为：`espocrm`
 3. 到 EspoCRM 官方[下载源码](https://www.espocrm.com/download/)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 EspoCRM 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 EspoCRM 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -34,7 +34,7 @@
 2. 选择语言之后（中国支持非常好），系统进入环境检测步骤
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/espocrm/espocrm-check-websoft9.png)
 
-3. 然后点击“Install”，进入数据库参数设置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）
+3. 然后点击“Install”，进入数据库参数设置界面（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/espocrm/espocrm-dbconf-websoft9.png)
 
 4. 数据库连接正确，点击“Next”进入管理员账号设置界面，填写管理员信息，牢记之，并进入下一步

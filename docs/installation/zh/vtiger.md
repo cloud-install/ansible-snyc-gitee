@@ -1,6 +1,6 @@
 # VtigerCRM
 
-本文档可供使用了 **VtigerCRM 镜像** 用户参考，也可以供准备在 **LAMP 镜像** 上自行部署 VtigerCRM 参考。
+本文档可供使用了 **VtigerCRM 镜像** 用户参考，也可以供准备在 **LCMP 镜像** 上自行部署 VtigerCRM 参考。
 
 [VtigerCRM](https://vtiger.com)一套开源的客户关系管理系统(CRM)。基于SugarCRM开发的一个衍生版本。适合帮助中小企业从业务，从市场、销售、采购、库存、客服等全程跟踪客户，实现销售自动化，获取更多订单。  
 
@@ -12,18 +12,18 @@
 在开始 VtigerCRM 的安装部署之前，建议完成如下事情：
 
 * 浏览器访问：*http://公网ip/9panel* ，快速了解镜像的使用
-* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lamp/zh/stack-components.html)）
+* 查看镜像环境参数，包括：**目录路径、版本、数据库、虚拟主机配置文件等** （[马上查看](https://support.websoft9.com/docs/lcmp/zh/stack-components.html)）
 
 ## VtigerCRM 安装到服务器
 
 **如果你使用的是 *VtigerCRM 镜像*，本节请忽略，直接阅读下一节 【VtigerCRM 初始化安装向导】**
 
-如果你使用的是 LAMP 镜像，请先将 VtigerCRM 安装到服务器，操作步骤如下：
+如果你使用的是 LCMP 镜像，请先将 VtigerCRM 安装到服务器，操作步骤如下：
 
 1. 通过域名控制台完成解析域名（增加一个A记录指向服务器IP），并测试是否成功
-2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lamp/zh/admin-mysql.html)，为 VtigerCRM 系统增加一个数据库，假如名称为：`vtigercrm`
+2. 通过 [phpMyAdmin 登录 MySQL](https://support.websoft9.com/docs/lcmp/zh/admin-mysql.html)，为 VtigerCRM 系统增加一个数据库，假如名称为：`vtigercrm`
 3. 到 VtigerCRM 官方[下载源码](https://www.vtiger.com/open-source-crm)
-4. 参考[《如何在 LAMP 上增加网站》](https://support.websoft9.com/docs/lamp/zh/solution-deployment.html#安装第二个网站) ，将 VtigerCRM 安装到服务器的 [LAMP](https://support.websoft9.com/docs/lamp/zh/) 环境中
+4. 参考[《如何在 LCMP 上增加网站》](https://support.websoft9.com/docs/lcmp/zh/solution-deployment.html#安装第二个网站) ，将 VtigerCRM 安装到服务器的 [LCMP](https://support.websoft9.com/docs/lcmp/zh/) 环境中
 
 ---
 
@@ -35,7 +35,7 @@
 2. 系统进入环境检测步骤，通过后进入下一步
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/vtigercrm/vtigercrm-install002-websoft9.png)
 
-3. 填写您的数据库参数（[查看数据库账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html)）
+3. 填写您的数据库参数（[查看数据库账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html)）
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/vtigercrm/vtigercrm-install003-websoft9.png)
 
 4. 数据库连接正确，点击“Next”进入下一步

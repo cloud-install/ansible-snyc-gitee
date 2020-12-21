@@ -3,24 +3,24 @@
 #### What is the default character set?
 UTF-8
 
-#### Apache working mode has event, prefork, worker, etc. Which is LAMP default?
+#### Caddy working mode has event, prefork, worker, etc. Which is LCMP default?
 Prefork
 
-#### What is the Apache vhost configuration file?
-The Apache vhost configuration file is the function for Apache to manage multiple applications. It's path is: */etc/httpd/conf.d/vhost.conf*.
+#### What is the Caddy vhost configuration file?
+The Caddy vhost configuration file is the function for Caddy to manage multiple applications. It's path is: */etc/httpd/conf.d/vhost.conf*.
 There have `<VirtualHost *:80> ...</VirtualHost>` , each segment is corresponding to a application
 
 #### How to modify the path of example application?
 
-Example application's path is: */data/wwwroot/www.example.com*, you can modify it by [Apache vhost configuration file](/stack-components.md#apache)
+Example application's path is: */data/wwwroot/www.example.com*, you can modify it by [Caddy vhost configuration file](/stack-components.md#apache)
 
-#### Does the LAMP support deploying multiple applications?
+#### Does the LCMP support deploying multiple applications?
 
-Yes, add new application, you should add new VirtualHost segment in the file [Apache vhost configuration file](/stack-components.md#apache) for it
+Yes, add new application, you should add new VirtualHost segment in the file [Caddy vhost configuration file](/stack-components.md#apache) for it
 
-#### If there is no domain name, can I deploy LAMP?
+#### If there is no domain name, can I deploy LCMP?
 
-Yes, visit LAMP by *http://Internet IP*
+Yes, visit LCMP by *http://Internet IP*
 
 #### What is the password for the database root user?
 
@@ -32,11 +32,11 @@ Yes, phpMyAdmin is on it, visit by *http://Internet IP/phpmyadmin*
 
 #### How to disable phpMyAdmin access?
 
-Edit the  [phpMyAdmin configuration file](/stack-components.md#phpmyadmin), replace `Require all granted` with `Require ip 192.160.1.0`, then restart Apache service
+Edit the  [phpMyAdmin configuration file](/stack-components.md#phpmyadmin), replace `Require all granted` with `Require ip 192.160.1.0`, then restart Caddy service
 
 #### Is it possible to modify the code source path?
 
-Yes, modify it by [Apache vhost configuration file](/stack-components.md#apache)
+Yes, modify it by [Caddy vhost configuration file](/stack-components.md#apache)
 
 #### How to delete 9Panel?
 
@@ -44,12 +44,12 @@ Please delete all files in 9Panel */data/apps/9panel* and keep an empty 9Panel f
 
 #### Do I need to change the owner(group) for the files which I upload by SFTP?
 
-No, you don't need to change them because LAMP Image have change it automaticly
+No, you don't need to change them because LCMP Image have change it automaticly
 
 #### How can I reset my php.ini to return to the initial?
-Download the [php.ini](https://github.com/Websoft9/ansible-lamp/blob/master/roles/php/templates/php.ini) from Websoft9 LAMP project on Github, upload to Server and cover /ect/php.ini
+Download the [php.ini](https://github.com/Websoft9/ansible-lcmp/blob/master/roles/php/templates/php.ini) from Websoft9 LCMP project on Github, upload to Server and cover /ect/php.ini
 
-#### How to disable Apache Test Page?
+#### How to disable Caddy Test Page?
 
 Using the **#** to disable all the content in the file: */etc/httpd/conf.d/welcome.conf*, then restart service
 
@@ -72,25 +72,25 @@ RewriteBase /
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 ```
-#### Which Apache modules are installed by default by LAMP?
+#### Which Caddy modules are installed by default by LCMP?
 
 Use command `apachectl -M` to list all modules
 
-#### Which PHP modules are installed by default by LAMP?
+#### Which PHP modules are installed by default by LCMP?
 
 Use command `php -m` to list all modules
 
-#### How to enable or disable Apache module?
+#### How to enable or disable Caddy module?
 
-e.g  assume you want to manage Rewrite module, please edit [Apache module configuration file](/stack-components.md#apache), find the item *LoadModule rewrite_module modules/mod_rewrite.so*, use **#** to disable it
+e.g  assume you want to manage Rewrite module, please edit [Caddy module configuration file](/stack-components.md#apache), find the item *LoadModule rewrite_module modules/mod_rewrite.so*, use **#** to disable it
 
 #### How to disable IP access my application?
 
-Refer to the docs [Apache configuration](https://support.websoft9.com/docs/linux/webs-apache.html#disable-ip-access)
+Refer to the docs [Caddy configuration](https://support.websoft9.com/docs/linux/webs-apache.html#disable-ip-access)
 
 #### Is there a domain name that can be accessed via http://public IP/mysite1?
 
-Yes, refer to the docs [Deploy a PHP application](/lamp/solution-deployment.html#deploy-second-application)
+Yes, refer to the docs [Deploy a PHP application](/lcmp/solution-deployment.html#deploy-second-application)
 
 #### What's the difference between Deployment and Installation?
 

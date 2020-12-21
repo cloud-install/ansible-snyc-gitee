@@ -2,7 +2,7 @@
 
 使用由Websoft9提供的LAMP部署方案，可能需要用到的服务如下：
 
-### Apache
+### Caddy
 
 ```shell
 #For Centos&Redhat

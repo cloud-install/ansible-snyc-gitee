@@ -1,6 +1,6 @@
 # Typo3
 
-This chapter is used for users who have subscribed **Typo3 image** or **LAMP image**.
+This chapter is used for users who have subscribed **Typo3 image** or **LCMP image**.
 
 Typo3 is a content management system written in the PHP programming language. Typo3 began as Concrete CMS in 2003, and was the glue behind many web applications, websites, stores and forums between 2003 and 2008.
 
@@ -10,18 +10,18 @@ Before your installation, suggest you complete follows:
 
 * Get the **Internet IP** of your Server on your Cloud Platform
 * Visit *http://Internet IP/9panel* to quik start
-* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lamp/stack-components.html))
+* Know more about PHP runtime, includes:**installation directory, version, database, vhost** ([view it](https://support.websoft9.com/docs/lcmp/stack-components.html))
 
 ## Typo3 deployment
 
 **If you are using the Websoft9 Typo3 Image, go to the [Typo3 Installation Wizard](/typo3.md#typo3-installation-wizard) directly**
 
-If you are using LAMP, please deploy Typo3 to your Server as follows:
+If you are using LCMP, please deploy Typo3 to your Server as follows:
 
 1. Log in your Domain console and complete a Domain resolution, make sure it successful
-2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lamp/admin-mysql.html), create a database named`typo3`
+2. Using [phpMyAdmin to log in MySQL](https://support.websoft9.com/docs/lcmp/admin-mysql.html), create a database named`typo3`
 3. Go to Typo3 official website to [download](http://www.typo3.org/download)  source code
-4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lamp/solution-deployment.html#deploy-second-application)* of [LAMP](https://support.websoft9.com/docs/lamp/) to deploy Typo3 to your Server
+4. Refer to *[Deploy second application](https://support.websoft9.com/docs/lcmp/solution-deployment.html#deploy-second-application)* of [LCMP](https://support.websoft9.com/docs/lcmp/) to deploy Typo3 to your Server
 
 ---
 
@@ -32,7 +32,7 @@ If you are using LAMP, please deploy Typo3 to your Server as follows:
 2. After the system environment check, go to next step 
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/typo3/ty02.png)
 
-3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lamp/stack-accounts.html#mysql))
+3. Then configure the database connection information([Don't know password?](https://support.websoft9.com/docs/lcmp/stack-accounts.html#mysql))
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/typo3/ty03.png)
 
 4. Select a database name, click "Continue"

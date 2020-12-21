@@ -1,8 +1,8 @@
 # SSL/HTTPS
 
-LAMP deployment package has installed the SSL module of Apache and open Certificate Authority **[Let's Encrypt](https://letsencrypt.org/)** for you configure the HTTPS quickly and conveniently.
+LCMP deployment package has installed the SSL module of Caddy and open Certificate Authority **[Let's Encrypt](https://letsencrypt.org/)** for you configure the HTTPS quickly and conveniently.
 
-> In addition to the vhost configuration file, HTTPS settings do not need to modify any files in Apache
+> In addition to the vhost configuration file, HTTPS settings do not need to modify any files in Caddy
 
 ## Simple Steps
 
@@ -31,7 +31,7 @@ If you have applied for a commercial certificate, complete the HTTPS configurati
     </VirtualHost>
    #-----HTTPS template end------------
    ```
-4. Save file and [Restart Apache service](/admin-services.md)
+4. Save file and [Restart Caddy service](/admin-services.md)
 
 ## Special Guide
 

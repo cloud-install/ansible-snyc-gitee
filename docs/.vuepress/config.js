@@ -2,8 +2,8 @@ module.exports = {
 
 //针对不同项目，需要修改的参数有：base,title,description,repo以及nav,sidebar 文件夹下的导航js文件
 
-base: '/docs/lamp/',
-dest: 'html/lamp',
+base: '/docs/lcmp/',
+dest: 'html/lcmp',
 
 head: [
   ['link', { rel: 'icon', href: '/favcon.ico' }]
@@ -13,13 +13,13 @@ head: [
 locales: {
     '/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-      title: 'LAMP Administrator Guide',
-      description: 'You can get the Installation of Image,Administrator,Configuration of the LAMP from this documentation.'
+      title: 'LCMP Administrator Guide',
+      description: 'You can get the Installation of Image,Administrator,Configuration of the LCMP from this documentation.'
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: 'LAMP 管理员手册',
-      description: '本文档由 Websoft9 公司提供，用于指导用户学习 LAMP 的安装部署与基本运维技术，包括：部署、初始化安装、安装网站、安装扩展、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作，帮助您在最短的时间里学会在Linux上使用Apache+PHP+MySQL的组合，成为一名合格的云计算运维工程师。'
+      title: 'LCMP 管理员手册',
+      description: '本文档由 Websoft9 公司提供，用于指导用户学习 LCMP 的安装部署与基本运维技术，包括：部署、初始化安装、安装网站、安装扩展、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作，帮助您在最短的时间里学会在Linux上使用Apache+PHP+MySQL的组合，成为一名合格的云计算运维工程师。'
     }
 },
 
@@ -32,7 +32,7 @@ themeConfig: {
   sidebar: 'auto', // 默认值：false
 
   //Github 
-  repo: 'Websoft9/ansible-lamp',
+  repo: 'Websoft9/ansible-lcmp',
   editLinks: true,
   docsDir: 'docs',
   docsBranch: 'main',

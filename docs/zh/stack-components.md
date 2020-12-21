@@ -1,23 +1,23 @@
 # 参数
 
-LAMP 预装包包含 LAMP 运行所需一序列支撑软件（简称为“组件”），下面列出主要组件名称、安装路径、配置文件地址、端口、版本等重要的信息。
+LCMP 预装包包含 LCMP 运行所需一序列支撑软件（简称为“组件”），下面列出主要组件名称、安装路径、配置文件地址、端口、版本等重要的信息。
 
 ## 路径
 
 ### 网站目录
 
-根目录： *LAMP 环境中，你的网站代码存放位置是没有限制的，因此没有根目录的说法*  
+根目录： *LCMP 环境中，你的网站代码存放位置是没有限制的，因此没有根目录的说法*  
 网站存放目录（建议）： */data/wwwroot*  
 示例网站目录： */data/wwwroot/www.example.com*  
 
 > 通过 *http://公网IP地址* 访问的就是示例网站 
 
-### Apache
+### Caddy
 
-Apache 虚拟主机配置文件：*/etc/httpd/conf.d/vhost.conf*  
-Apache 主配置文件： */etc/httpd/conf/httpd.conf*  
-Apache 日志文件： */var/log/httpd*  
-Apache 模块配置文件： */etc/httpd/conf.modules.d/00-base.conf*
+Caddy 虚拟主机配置文件：*/etc/httpd/conf.d/vhost.conf*  
+Caddy 主配置文件： */etc/httpd/conf/httpd.conf*  
+Caddy 日志文件： */var/log/httpd*  
+Caddy 模块配置文件： */etc/httpd/conf.modules.d/00-base.conf*
 
 **vhost.conf** 默认存在一个 [VirtualHost（虚拟主机）](https://support.websoft9.com/docs/linux/zh/webs-apache.html#虚拟主机) 配置项，对应的就是 **示例网站**
 ```
@@ -55,7 +55,7 @@ pdo_dblib  pdo_mysql  PDO_ODBC  pdo_sqlite  wddx  xmlreader  xmlrpc  igbinary  i
 MySQL 安装路径: */usr/local/mysql*  
 MySQL 数据文件 */data/mysql*  
 MySQL 配置文件: */etc/my.cnf*    
-MySQL 可视化管理地址: *http://服务器公网IP/phpmyadmin* 用户名和密码请见 [账号密码](https://support.websoft9.com/docs/lamp/zh/stack-accounts.html) 章节。
+MySQL 可视化管理地址: *http://服务器公网IP/phpmyadmin* 用户名和密码请见 [账号密码](https://support.websoft9.com/docs/lcmp/zh/stack-accounts.html) 章节。
 
 ### phpMyAdmin
 
@@ -95,13 +95,13 @@ php -v
 # List Installed PHP Modules
 php -m
 
-# Apache version on Centos
+# Caddy version on Centos
 httpd -v
 
-# Apache version on Ubuntu
+# Caddy version on Ubuntu
 apache2 -v
 
-# List Installed Apache Modules
+# List Installed Caddy Modules
 apachectl -M
 
 # MySQL version

@@ -1,15 +1,15 @@
 # Laravel
 
-The  laravel runtime environment (lamp) provided by websoft9,based on [lamp environment image](https://support.websoft9.com/docs/lamp),It can help you install and deploy quickly.
+The  laravel runtime environment (lcmp) provided by websoft9,based on [lcmp environment image](https://support.websoft9.com/docs/lcmp),It can help you install and deploy quickly.
 
 ###Laravel Installation Principle
 
-How to install laravel  based on lamp
+How to install laravel  based on lcmp
 
->If you use the larravel runtime environment (lamp), you only need to understand the principle, and there is no need to install larave again.
+>If you use the larravel runtime environment (lcmp), you only need to understand the principle, and there is no need to install larave again.
 
 
-1. Server deployment [lamp image]（ https://support.websoft9.com/docs/lamp )
+1. Server deployment [lcmp image]（ https://support.websoft9.com/docs/lcmp )
 2. Download the larevel package and upload it to the server directory: */data/wwwroot/laravel*
 3. User Winscp connect to the server and edit the virtual host configuration file: */etc/httpd/vhost/vhost.conf* 
 4. Set  DocumentRoot and directory path : *laravel/public*
