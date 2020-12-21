@@ -5,17 +5,10 @@ These commands you must know when you using the LCMP of Websoft9
 ### Caddy
 
 ```shell
-#For Centos&Redhat
-sudo systemctl start httpd
-sudo systemctl stop httpd
-sudo systemctl restart httpd
-sudo systemctl status httpd
-
-#For Ubuntu&Debian
-sudo systemctl start apache2
-sudo systemctl stop apache2
-sudo systemctl restart apache2
-sudo systemctl status apache2
+sudo systemctl start caddy
+sudo systemctl stop caddy
+sudo systemctl restart caddy
+sudo systemctl status caddy
 ```
 
 ### PHP-FPM
