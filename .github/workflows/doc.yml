@@ -11,7 +11,7 @@ jobs:
       with:
         src: github/cloud-install
         dst: gitee/qiaofeng1227
-        dst_key: ${{ secrets.websoft9_public }}
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY  }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         #clone_style: ssh
         account_type: org
