@@ -9,8 +9,8 @@ jobs:
     - name: Mirror the Github organization repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: github/cloud-install
-        dst: gitee/qiaofeng1227
+        src: github/websoft9
+        dst: gitee/websoft9op
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY  }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         #clone_style: ssh
