@@ -13,5 +13,5 @@ jobs:
         dst: gitee/qiaofeng1227
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY  }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
-        #clone_style: ssh
-        account_type: org
+        #clone_style: ssh | org
+        account_type: ssh
