@@ -14,4 +14,4 @@ jobs:
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY  }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         #clone_style: ssh | org
-        account_type: ssh
+        account_type: org
